@@ -1,0 +1,11 @@
+End-User License Agreement
+
+This program is provided as-is. No warranty is provided with it. By installing and using this program, you do so at your own risk. Under no circumstances can the author be held responsible for any damages, data loss or other negative effects resulting from the use of the program.
+
+This software program is the sole property of Fabien Royer. You may not redistribute, sell, bundle, OEM, modify or reverse-engineer it without a written agreement.
+
+The name 'GpxSonar' is protected by copyright and cannot by used without written permission.
+
+Copyright © 2003-2006 Fabien Royer. All Rights Reserved.
+Designated trademarks and brands are the property of their respective owners.
+

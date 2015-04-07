@@ -1,0 +1,1967 @@
+# Microsoft eMbedded Visual Tools Project File - Name="Zlib" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE x86) Static Library" 0x8304
+# TARGTYPE "Win32 (WCE ARMV4) Static Library" 0xa304
+# TARGTYPE "Win32 (WCE ARMV4I) Static Library" 0xa504
+# TARGTYPE "Win32 (WCE emulator) Static Library" 0xa604
+# TARGTYPE "Win32 (WCE ARMV4T) Static Library" 0xa404
+
+CFG=Zlib - Win32 (WCE emulator) Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "Zlib.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "Zlib.vcn" CFG="Zlib - Win32 (WCE emulator) Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "Zlib - Win32 (WCE emulator) Release" (based on "Win32 (WCE emulator) Static Library")
+!MESSAGE "Zlib - Win32 (WCE emulator) Debug" (based on "Win32 (WCE emulator) Static Library")
+!MESSAGE "Zlib - Win32 (WCE ARMV4I) Release" (based on "Win32 (WCE ARMV4I) Static Library")
+!MESSAGE "Zlib - Win32 (WCE ARMV4I) Debug" (based on "Win32 (WCE ARMV4I) Static Library")
+!MESSAGE "Zlib - Win32 (WCE ARMV4) Release" (based on "Win32 (WCE ARMV4) Static Library")
+!MESSAGE "Zlib - Win32 (WCE ARMV4) Debug" (based on "Win32 (WCE ARMV4) Static Library")
+!MESSAGE "Zlib - Win32 (WCE ARMV4T) Release" (based on "Win32 (WCE ARMV4T) Static Library")
+!MESSAGE "Zlib - Win32 (WCE ARMV4T) Debug" (based on "Win32 (WCE ARMV4T) Static Library")
+!MESSAGE "Zlib - Win32 (WCE x86) Release" (based on "Win32 (WCE x86) Static Library")
+!MESSAGE "Zlib - Win32 (WCE x86) Debug" (based on "Win32 (WCE x86) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "emulatorRel"
+# PROP BASE Intermediate_Dir "emulatorRel"
+# PROP BASE CPU_ID "{32E52003-403E-442D-BE48-DE10F8C6131D}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "emulatorRel"
+# PROP Intermediate_Dir "emulatorRel"
+# PROP CPU_ID "{32E52003-403E-442D-BE48-DE10F8C6131D}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "NDEBUG" /D "_LIB" /YX /Gs8192 /GF /O2  /c
+# ADD CPP /nologo /W3 /D "_i386_" /D "_X86_" /D "x86" /D "NDEBUG" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Gs8192 /GF /O2  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "emulatorDbg"
+# PROP BASE Intermediate_Dir "emulatorDbg"
+# PROP BASE CPU_ID "{32E52003-403E-442D-BE48-DE10F8C6131D}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "emulatorDbg"
+# PROP Intermediate_Dir "emulatorDbg"
+# PROP CPU_ID "{32E52003-403E-442D-BE48-DE10F8C6131D}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "_LIB" /YX /Gs8192 /GF  /c
+# ADD CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "_i386_" /D "_X86_" /D "x86" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Gs8192 /GF  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4IRel"
+# PROP BASE Intermediate_Dir "ARMV4IRel"
+# PROP BASE CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "ARMV4IRel"
+# PROP Intermediate_Dir "ARMV4IRel"
+# PROP CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_LIB" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT)  /c
+# ADD CPP /nologo /W3 /D "ARM" /D "_ARM_" /D "ARMV4I" /D "NDEBUG" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4IDbg"
+# PROP BASE Intermediate_Dir "ARMV4IDbg"
+# PROP BASE CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "ARMV4IDbg"
+# PROP Intermediate_Dir "ARMV4IDbg"
+# PROP CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug)  /c
+# ADD CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "ARM" /D "_ARM_" /D "ARMV4I" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4Rel"
+# PROP BASE Intermediate_Dir "ARMV4Rel"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "ARMV4Rel"
+# PROP Intermediate_Dir "ARMV4Rel"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "NDEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /O2 /M$(CECrtMT)  /c
+# ADD CPP /nologo /W3 /D "NDEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /O2 /M$(CECrtMT)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4Dbg"
+# PROP BASE Intermediate_Dir "ARMV4Dbg"
+# PROP BASE CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "ARMV4Dbg"
+# PROP Intermediate_Dir "ARMV4Dbg"
+# PROP CPU_ID "{ECBEA43D-CD7B-4852-AD55-D4227B5D624B}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clarm.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "ARM" /D "_ARM_" /D "ARMV4" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug)  /c
+# ADD CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "ARM" /D "_ARM_" /D "ARMV4" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /M$(CECrtMTDebug)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4TRel"
+# PROP BASE Intermediate_Dir "ARMV4TRel"
+# PROP BASE CPU_ID "{F52316A9-3B7C-4FE7-A67F-68350B41240D}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "ARMV4TRel"
+# PROP Intermediate_Dir "ARMV4TRel"
+# PROP CPU_ID "{F52316A9-3B7C-4FE7-A67F-68350B41240D}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clthumb.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "THUMB" /D "_THUMB_" /D "ARMV4T" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_LIB" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT)  /c
+# ADD CPP /nologo /W3 /D "ARM" /D "_ARM_" /D "THUMB" /D "_THUMB_" /D "ARMV4T" /D "NDEBUG" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4TDbg"
+# PROP BASE Intermediate_Dir "ARMV4TDbg"
+# PROP BASE CPU_ID "{F52316A9-3B7C-4FE7-A67F-68350B41240D}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "ARMV4TDbg"
+# PROP Intermediate_Dir "ARMV4TDbg"
+# PROP CPU_ID "{F52316A9-3B7C-4FE7-A67F-68350B41240D}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=clthumb.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "THUMB" /D "_THUMB_" /D "ARMV4T" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug)  /c
+# ADD CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "ARM" /D "_ARM_" /D "THUMB" /D "_THUMB_" /D "ARMV4T" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug)  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "X86Rel"
+# PROP BASE Intermediate_Dir "X86Rel"
+# PROP BASE CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "X86Rel"
+# PROP Intermediate_Dir "X86Rel"
+# PROP CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "NDEBUG" /D "_LIB" /YX /Gs8192 /GF /O2  /c
+# ADD CPP /nologo /W3 /D "_i386_" /D "_X86_" /D "x86" /D "NDEBUG" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Gs8192 /GF /O2  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "X86Dbg"
+# PROP BASE Intermediate_Dir "X86Dbg"
+# PROP BASE CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "X86Dbg"
+# PROP Intermediate_Dir "X86Dbg"
+# PROP CPU_ID "{D6518FF3-710F-11D3-99F2-00105A0DF099}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+CPP=cl.exe
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D "_i386_" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_X86_" /D "x86" /D "_LIB" /YX /Gs8192 /GF  /c
+# ADD CPP /nologo /W3 /Zi /Od /D "DEBUG" /D "_i386_" /D "_X86_" /D "x86" /D "NO_ERRNO_H" /D "_WIN32_WCE" /D _WIN32_WCE=$(CEVersion) /D "$(CePlatform)" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /YX /Gs8192 /GF  /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "Zlib - Win32 (WCE emulator) Release"
+# Name "Zlib - Win32 (WCE emulator) Debug"
+# Name "Zlib - Win32 (WCE ARMV4I) Release"
+# Name "Zlib - Win32 (WCE ARMV4I) Debug"
+# Name "Zlib - Win32 (WCE ARMV4) Release"
+# Name "Zlib - Win32 (WCE ARMV4) Debug"
+# Name "Zlib - Win32 (WCE ARMV4T) Release"
+# Name "Zlib - Win32 (WCE ARMV4T) Debug"
+# Name "Zlib - Win32 (WCE x86) Release"
+# Name "Zlib - Win32 (WCE x86) Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\adler32.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_ADLER=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\compress.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_COMPR=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\crc32.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_CRC32=\
+	".\crc32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\deflate.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_DEFLA=\
+	".\deflate.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\gzio.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_GZIO_=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\infback.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_INFBA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\inffast.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_INFFA=\
+	".\inffast.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\inflate.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_INFLA=\
+	".\inffast.h"\
+	".\inffixed.h"\
+	".\inflate.h"\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\inftrees.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_INFTR=\
+	".\inftrees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\ioapi.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_IOAPI=\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\iowin32.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_IOWIN=\
+	".\ioapi.h"\
+	".\iowin32.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\trees.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_TREES=\
+	".\deflate.h"\
+	".\trees.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\uncompr.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_UNCOM=\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\unzip.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_UNZIP=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\unzip.h"\
+	".\zconf.h"\
+	".\zlib.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\zip.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_ZIP_C=\
+	".\crypt.h"\
+	".\ioapi.h"\
+	".\zconf.h"\
+	".\zip.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# Begin Source File
+
+SOURCE=.\zutil.c
+
+!IF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Release"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE emulator) Debug"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Release"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4I) Debug"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Release"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4) Debug"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Release"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE ARMV4T) Debug"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Release"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ELSEIF  "$(CFG)" == "Zlib - Win32 (WCE x86) Debug"
+
+DEP_CPP_ZUTIL=\
+	".\zconf.h"\
+	".\zlib.h"\
+	".\zutil.h"\
+	
+
+!ENDIF 
+
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\crc32.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\deflate.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\inffast.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\inffixed.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\inflate.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\inftrees.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ioapi.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\iowin32.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\trees.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\unzip.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\zconf.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\zconf.in.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\zip.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\zlib.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\zutil.h
+# End Source File
+# End Group
+# End Target
+# End Project

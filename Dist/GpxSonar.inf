@@ -1,0 +1,164 @@
+[Version]
+Signature   = "$Windows NT$"    ; required as-is
+Provider    = "-=(GEO's)=-"     ; maximum of 30 characters, full app name will be "<Provider> <AppName>"
+CESignature = "$Windows CE$"    ; required as-is
+ 
+[CEStrings]
+AppName     = "GPXSonar"        ; maximum of 40 characters, full app name will be "<Provider> <AppName>"
+InstallDir  = %CE1%\%AppName%   ; Program Files\GPXSonar
+ 
+[SourceDisksNames]                  ; directory that holds the application's files
+1 = , "GPXSonar",,GPXSonar
+2 = , "GPXSonar\Config",,GPXSonar\Config
+3 = , "GPXSonar\Docs",,GPXSonar\Docs
+4 = , "GPXSonar\Docs\Images",,GPXSonar\Docs\Images
+5 = , "GPXSonar\Docs\Images\Help",,GPXSonar\Docs\Images\Help
+6 = , "GPXSonar\Docs\Images\Icons",,GPXSonar\Docs\Images\Icons
+7 = , "GPXSonar\Docs\Images\WptTypes",,GPXSonar\Docs\Images\WptTypes
+
+[SourceDisksFiles]                  ; list of files to be included in .cab
+GPXSonar.exe = 1
+DoNotDelete = 2
+CachePageTpl.htm = 3
+FieldNotesReportTpl.htm = 3
+Help.html = 3
+halfstargreen.gif = 4
+halfstaryellow.gif = 4
+icon_bug.gif = 4
+stargreen.gif = 4
+staryellow.gif = 4
+radar.gif = 5
+icon_happy.gif = 6
+icon_note.gif = 6
+icon_remove.gif = 6
+icon_sad.gif = 6
+icon_smile.gif = 6
+icon_smile_8ball.gif = 6
+icon_smile_angry.gif = 6
+icon_smile_approve.gif = 6
+icon_smile_big.gif = 6
+icon_smile_blackeye.gif = 6
+icon_smile_blush.gif = 6
+icon_smile_clown.gif = 6
+icon_smile_cool.gif = 6
+icon_smile_dead.gif = 6
+icon_smile_evil.gif = 6
+icon_smile_kisses.gif = 6
+icon_smile_question.gif = 6
+icon_smile_sad.gif = 6
+icon_smile_shock.gif = 6
+icon_smile_tongue.gif = 6
+icon_smile_wink.gif = 6
+icon_camera.gif = 6
+icon_smile_dissapprove.gif = 6
+icon_smile_shy.gif = 6
+icon_smile_sleepy.gif = 6
+traffic_cone.gif = 6
+icon_enabled.gif = 6
+icon_disabled.gif = 6
+voice_record.gif = 6
+Cache_In_Trash_Out_Event.gif = 7
+Event_Cache.gif = 7
+Letterbox_Hybrid.gif = 7
+Locationless_(Reverse)_Cache.gif = 7
+Multi-Cache.gif = 7
+Project_APE_Cache.gif = 7
+Traditional_Cache.gif = 7
+Unknown_Cache.gif = 7
+Unknown_(Mystery)_Cache.gif = 7
+Virtual_Cache.gif = 7
+Webcam_Cache.gif = 7
+Earthcache.gif = 7
+
+[DefaultInstall]                    ; operations to be completed during install
+CopyFiles   = Files.Root,Files.Config,Files.Docs,Files.Docs.Images,Files.Docs.Images.Help,Files.Docs.Images.Icons,Files.Docs.Images.WptTypes
+AddReg      = RegData
+CEShortcuts = Shortcuts   
+ 
+[DestinationDirs]                   ; default destination directories for each operation section
+Files.Root = 0,%InstallDir%
+Files.Config = 0,%InstallDir%\Config
+Files.Docs = 0,%InstallDir%\Docs
+Files.Docs.Images = 0,%InstallDir%\Docs\Images
+Files.Docs.Images.Help = 0,%InstallDir%\Docs\Images\Help
+Files.Docs.Images.Icons = 0,%InstallDir%\Docs\Images\Icons
+Files.Docs.Images.WptTypes = 0,%InstallDir%\Docs\Images\WptTypes
+Shortcuts = 0, %CE11%	;\Windows\Start Menu\Programs
+ 
+[Files.Root]                ; copy operation file list
+GPXSonar.exe
+
+[Files.Config]                ; copy operation file list
+DoNotDelete
+
+[Files.Docs]                ; copy operation file list
+CachePageTpl.htm
+FieldNotesReportTpl.htm
+Help.html
+
+[Files.Docs.Images]
+halfstargreen.gif
+halfstaryellow.gif
+icon_bug.gif
+stargreen.gif
+staryellow.gif
+
+[Files.Docs.Images.Help]
+radar.gif
+
+[Files.Docs.Images.Icons]
+icon_happy.gif
+icon_note.gif
+icon_remove.gif
+icon_sad.gif
+icon_smile.gif
+icon_smile_8ball.gif
+icon_smile_angry.gif
+icon_smile_approve.gif
+icon_smile_big.gif
+icon_smile_blackeye.gif
+icon_smile_blush.gif
+icon_smile_clown.gif
+icon_smile_cool.gif
+icon_smile_dead.gif
+icon_smile_evil.gif
+icon_smile_kisses.gif
+icon_smile_question.gif
+icon_smile_sad.gif
+icon_smile_shock.gif
+icon_smile_tongue.gif
+icon_smile_wink.gif
+icon_camera.gif
+icon_smile_dissapprove.gif
+icon_smile_shy.gif
+icon_smile_sleepy.gif
+traffic_cone.gif
+icon_enabled.gif
+icon_disabled.gif
+voice_record.gif
+
+[Files.Docs.Images.WptTypes]
+Cache_In_Trash_Out_Event.gif
+Event_Cache.gif
+Letterbox_Hybrid.gif
+Locationless_(Reverse)_Cache.gif
+Multi-Cache.gif
+Project_APE_Cache.gif
+Traditional_Cache.gif
+Unknown_Cache.gif
+Unknown_(Mystery)_Cache.gif
+Virtual_Cache.gif
+Webcam_Cache.gif
+Earthcache.gif
+
+[RegData]                           ; registry key list
+HKCU,Software\%AppName%,MajorVersion,0x00010001,1
+HKCU,Software\%AppName%,MinorVersion,0x00010001,0
+ 
+[Shortcuts]                         ; Shortcut created in destination dir, %CE11%
+%AppName%,0,GPXSonar.exe
+
+[Platform.GEO.PocketPC]
+PlatformString=Pocket PC
+PlatformMin=3.0
+PlatformMax=4.0

@@ -1,0 +1,1469 @@
+//Microsoft eMbedded Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GpxSonar.rc2""  // non-Microsoft eMbedded Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""wceres.rc""         // WCE-specific components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BEARINGS            BITMAP  DISCARDABLE     "res\\bearings.bmp"
+IDB_CACHES              BITMAP  DISCARDABLE     "res\\caches.bmp"
+IDB_COLUMNS             BITMAP  DISCARDABLE     "res\\strings1.bmp"
+IDB_FILTERS             BITMAP  DISCARDABLE     "res\\filters.bmp"
+IDB_STRINGS             BITMAP  DISCARDABLE     "res\\strings.bmp"
+IDB_TB                  BITMAP  DISCARDABLE     "res\\travelbugs.bmp"
+IDB_WAYPOINT            BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menubar
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Load Zipped GPX File",        ID_LOAD_GPX
+        MENUITEM SEPARATOR
+        POPUP "My Stuff"
+        BEGIN
+            MENUITEM "GC.com User ID",              ID_MENU_FILE_MYALIAS
+            MENUITEM SEPARATOR
+            MENUITEM "Caches",                      ID_MENU_FILE_MYCACHES
+            MENUITEM "Travel Bugs",                 ID_MENU_FILE_MYTRAVELBUGS
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "Reports"
+        BEGIN
+            MENUITEM "Field Notes",                 ID_MENU_FILE_REPORTS_FIELDNOTES
+
+            MENUITEM "GPX File Info",               ID_GPXFILEINFO
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "App Config",                  ID_FILE_APPCONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "List"
+    BEGIN
+        MENUITEM "Filters",                     ID_MENU_FILTERS
+        MENUITEM "Set Center",                  ID_MENU_LISTOPTIONS_CENTERCOORDS
+
+        MENUITEM "Distance Units",              ID_DISTANCE_UNITS
+        MENUITEM SEPARATOR
+        MENUITEM "Columns",                     ID_MENU_LISTOPTIONS_PREFERENCES
+
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Export Wpts / Notes",         ID_TOOLS_EXPORT_EXPORTLOCATIONS
+
+        MENUITEM SEPARATOR
+        MENUITEM "Hint Decoder",                ID_MENU_FILE_ROT13HELPER
+        MENUITEM SEPARATOR
+        MENUITEM "Field Notes Cleaner",         ID_TOOLS_FIELDNOTESCLEANER
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_HELP
+        MENUITEM "About GpxSonar...",           ID_APP_ABOUT
+    END
+END
+
+IDM_DOCLIST MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "About GpxSonar...",           ID_APP_ABOUT
+    END
+END
+
+IDR_OPTIONS MENU DISCARDABLE 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Show Hints",                  ID_MENU_CACHEOPTIONS_SHOWHINTS
+
+        MENUITEM SEPARATOR
+        MENUITEM "Set As Center",               ID_MENU_SETASCENTER
+        MENUITEM "Field Notes",                 ID_LOG_CACHE
+        MENUITEM "Export",                      ID_MENU_EXPORT
+        MENUITEM SEPARATOR
+        POPUP "Ignore"
+        BEGIN
+            MENUITEM "Ignore Cache",                ID_MENU_CACHEOPTIONS_IGNORECACHE
+
+            MENUITEM "Ignore Caches By This Owner", ID_MENU_IGNORECACHESBYTHISOWNER
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Dismiss Menu",                ID_MENU_DISMISSMENU
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+IDR_MAINFRAME SHMENUBAR MOVEABLE PURE 
+BEGIN
+    IDR_MAINFRAME, 3,
+    I_IMAGENONE, ID_GPXFILEINFO, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, ID_MENU_CACHEOPTIONS_IGNORECACHE, 0, 
+    0,
+    I_IMAGENONE, ID_CACHE_DETAILS, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_CAP_LIST, 0, 1,
+    I_IMAGENONE, IDR_MAIN_TOOL, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_TOOL, 0, 2,
+END
+
+IDM_DOCLIST SHMENUBAR MOVEABLE PURE 
+BEGIN
+    IDM_DOCLIST, 1,
+    I_IMAGENONE, IDR_DOC_TOOL, TBSTATE_ENABLED, 
+    TBSTYLE_DROPDOWN | TBSTYLE_AUTOSIZE, IDS_TOOL, 0, 0,
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Q",            ID_APP_EXIT,            VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 118, 49
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About GPX Sonar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "GPX Sonar v1.5",IDC_STATIC,30,3,84,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "By  -=(GEO)=-",IDC_GEO,30,18,84,12,SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Copyright (C) 2003-2006",IDC_STATIC,30,33,84,12,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    ICON            IDR_MAINFRAME,IDR_MAINFRAME,2,4,20,20,SS_NOTIFY
+END
+
+IDD_ALIAS DIALOG DISCARDABLE  0, 0, 106, 15
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GC.com User ID"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_ALIAS,1,1,81,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,84,1,21,12
+END
+
+IDD_CACHE_HINTS DIALOG DISCARDABLE  0, 0, 117, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hints"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HINTS,0,0,117,90,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_CACHE_IMPORT DIALOG DISCARDABLE  0, 0, 130, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import From Cache List"
+FONT 8, "System"
+BEGIN
+    LISTBOX         IDC_CACHES,0,0,129,75,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Show My Caches Only",IDC_SHOW_MINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,1,77,86,10
+    DEFPUSHBUTTON   "OK",IDOK,93,76,35,12
+END
+
+IDD_CACHE_LISTS DIALOG DISCARDABLE  0, 0, 121, 81
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cache Attributes"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Show Ignored Caches",IDC_HIDE_IGNORED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,4,84,10
+    PUSHBUTTON      "Edit",IDC_EDIT_IGNORED,90,3,27,13
+    CONTROL         "Hide Found Caches",IDC_HIDE_FOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,17,78,10
+    CONTROL         "Hide Disabled/Archived Caches",IDC_HIDE_DISABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,30,111,10
+    CONTROL         "Show Only",IDC_SHOW_ONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,42,66,10
+    CONTROL         "Found Caches",IDC_EXCLUSIVE_OPTIONS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,56,63,10
+    CONTROL         "Caches With Field Notes",IDC_EXCLUSIVE_OPTIONS2,"Button",
+                    BS_AUTORADIOBUTTON,12,68,93,10
+END
+
+IDD_CACHE_TRAVEL_BUGS DIALOG DISCARDABLE  0, 0, 154, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Travel Bugs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_CACHE_TB_LIST,3,18,72,69,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Grab from cache",IDC_GRAB,3,3,72,12
+    LISTBOX         IDC_MY_TB_LIST,78,18,74,69,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Drop Into Cache",IDC_DROP,78,3,74,12
+END
+
+IDD_CENTER DIALOG DISCARDABLE  0, 0, 106, 54
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Center Coordinates"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_LAT_COMBO,25,6,24,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_LAT_DEG,50,6,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAT_MIN_MMM,69,6,33,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LONG_COMBO,25,21,24,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_LONG_DEG,50,21,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LONG_MIN_MMM,69,21,33,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Project",IDC_PROJECT,2,39,27,12
+    PUSHBUTTON      "Bookmarks",IDC_BOOKMARK,33,39,43,12,WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,80,39,24,12
+    RTEXT           "Lat",IDC_STATIC,5,9,15,8
+    RTEXT           "Long",IDC_STATIC,3,24,17,8
+END
+
+IDD_DATE_PICKER DIALOG DISCARDABLE  0, 0, 73, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Date Placed"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_YEAR,33,3,39,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_MONTH,33,18,30,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DAY,33,33,30,63,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,22,51,30,12
+    RTEXT           "Year",IDC_STATIC,3,6,24,8
+    RTEXT           "Month",IDC_STATIC,3,21,24,8
+    RTEXT           "Day",IDC_STATIC,3,36,24,8
+END
+
+IDD_DIST_UNITS DIALOG DISCARDABLE  0, 0, 73, 54
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Units"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Kilometers",IDC_UNITS1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,3,3,63,8
+    CONTROL         "Statute Miles",IDC_UNITS2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,3,15,63,8
+    CONTROL         "Nautical Miles",IDC_UNITS3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,3,27,63,8
+    DEFPUSHBUTTON   "OK",IDOK,21,39,30,12
+END
+
+IDD_FIELDNOTESREPORTPREFS DIALOG DISCARDABLE  0, 0, 106, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Field Notes Report Filter"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Found",IDC_FOUNDIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,5,78,10
+    CONTROL         "Not Found",IDC_NOTFOUND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,16,78,10
+    CONTROL         "Notes",IDC_NOTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,27,78,10
+    CONTROL         "Archive",IDC_ARCHIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,38,78,10
+    LTEXT           "After The Report",IDC_STATIC,13,50,63,8
+    CONTROL         "Delete Selected Notes",IDC_DELETE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,62,87,9
+    DEFPUSHBUTTON   "OK",IDOK,35,72,36,12
+END
+
+IDD_FILTER_CONTAINERS DIALOG DISCARDABLE  0, 0, 96, 81
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cache Containers"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_OPTIONS,"SysTreeView32",TVS_CHECKBOXES | 
+                    WS_BORDER | WS_TABSTOP,0,0,96,81
+END
+
+IDD_FILTER_DIST_BEARING DIALOG DISCARDABLE  0, 0, 108, 81
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bearing & Distance"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_CHECKBOXES | 
+                    WS_BORDER | WS_TABSTOP,0,0,108,66
+    EDITTEXT        IDC_DIST,78,67,28,12,ES_AUTOHSCROLL
+    LTEXT           "Distance From Center",IDC_STATIC,3,69,70,8
+END
+
+IDD_FILTER_IGNORED_LIST DIALOG DISCARDABLE  0, 0, 130, 84
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ignored Caches"
+FONT 8, "System"
+BEGIN
+    LISTBOX         IDC_LIST,0,0,129,66,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Un-Ignore",IDC_UNIGNORE,2,69,50,13
+    PUSHBUTTON      "Un-Ignore All",IDC_UNIGNOREALL,78,69,50,13
+END
+
+IDD_FILTER_MGR DIALOG DISCARDABLE  0, 0, 93, 84
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Active Filters"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_SHOWSELALWAYS | 
+                    TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,0,0,93,69
+    DEFPUSHBUTTON   "Config",IDC_CONFIG,1,71,36,11
+    PUSHBUTTON      "Apply",IDOK,59,71,33,11
+END
+
+IDD_FILTER_STRINGS DIALOG DISCARDABLE  0, 0, 99, 84
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "String Filter"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_SHOWSELALWAYS | 
+                    TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,0,0,99,69
+    PUSHBUTTON      "Delete",IDC_DELETE,31,71,36,11
+END
+
+IDD_FILTER_TYPES DIALOG DISCARDABLE  0, 0, 120, 84
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cache Types"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_SHOWSELALWAYS | 
+                    TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,0,0,120,84
+END
+
+IDD_GPX_FILE_INFO DIALOG DISCARDABLE  0, 0, 115, 123
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "System"
+BEGIN
+    CONTROL         "List1",IDC_CACHE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,0,114,120
+END
+
+IDD_LINE_EDIT DIALOG DISCARDABLE  0, 0, 99, 27
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Title"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT,0,0,99,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,30,14,39,12
+END
+
+IDD_LIST_PREFERENCES DIALOG DISCARDABLE  0, 0, 99, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Visible Columns"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_COLS,"SysTreeView32",TVS_CHECKBOXES | 
+                    WS_BORDER | WS_TABSTOP,0,0,99,69
+    DEFPUSHBUTTON   "OK",IDOK,24,71,50,12
+END
+
+IDD_MY_TRAVEL_BUGS DIALOG DISCARDABLE  0, 0, 129, 90
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "My Travel Bugs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_TB_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,0,129,75
+    DEFPUSHBUTTON   "Add",IDC_ADD,1,77,39,12
+    PUSHBUTTON      "Edit",IDC_EDIT,43,77,39,12
+    PUSHBUTTON      "Remove",IDC_REMOVE,88,77,39,12
+END
+
+IDD_MYCACHE DIALOG DISCARDABLE  0, 0, 130, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cache Properties"
+FONT 8, "System"
+BEGIN
+    CONTROL         "List1",IDC_PROPERTIES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,0,0,129,75
+    PUSHBUTTON      "Edit",IDC_EDIT,1,77,33,12
+    PUSHBUTTON      "Preview Cache Page",IDC_PREVIEW,51,77,78,12
+END
+
+IDD_MYCACHES DIALOG DISCARDABLE  0, 0, 129, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "My Caches"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_CATEGORY,18,1,81,116,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit",IDC_CAT_EDIT,102,2,25,11
+    CONTROL         "List1",IDC_CACHES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,15,129,57
+    COMBOBOX        IDC_COMMAND,3,75,96,66,CBS_DROPDOWNLIST | WS_TABSTOP
+    DEFPUSHBUTTON   "Go",IDC_GO,102,75,25,12
+    LTEXT           "Cat.",IDC_STATIC,4,3,14,8
+END
+
+IDD_PROJECT DIALOG DISCARDABLE  0, 0, 121, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Waypoint Projection"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_Distance,28,3,29,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_Units,60,3,57,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_Direction,28,18,32,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_Bearing,93,18,23,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Project",IDOK,41,33,39,12
+    RTEXT           "Dist.",IDC_STATIC,5,5,16,8
+    CTEXT           "/ Degs",IDC_STATIC,64,21,24,8
+    RTEXT           "Dir.",IDC_STATIC,6,20,12,8
+END
+
+IDD_RATING DIALOG DISCARDABLE  0, 0, 73, 15
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Title"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_RATING,1,1,45,96,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,46,1,27,12
+END
+
+IDD_ROT13CONVERT DIALOG DISCARDABLE  0, 0, 129, 84
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ROT13 Converter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ROT13,0,0,129,66,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "Convert",IDC_CONVERT,39,69,50,12
+END
+
+IDD_SEARCH DIALOG DISCARDABLE  0, 0, 106, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Search"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_TEXT,27,3,75,12,ES_AUTOHSCROLL
+    CONTROL         "Exact",IDC_MATCH,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,6,33,33,10
+    CONTROL         "Partial",IDC_MATCH2,"Button",BS_AUTORADIOBUTTON,63,33,
+                    33,10
+    LTEXT           "Text",IDC_STATIC,3,5,18,8
+    GROUPBOX        "Match",IDC_STATIC,3,21,99,27
+    CONTROL         "Enable Search",IDC_ENABLE_SEARCH,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,22,49,61,
+                    10
+END
+
+IDD_TB_PROPERTIES DIALOG DISCARDABLE  0, 0, 127, 78
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Travel Bug Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SERIAL,42,3,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REF,42,18,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,42,33,81,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,42,64,45,12
+    LTEXT           "Serial #",IDC_STATIC,3,5,33,8
+    LTEXT           "Name",IDC_STATIC,3,33,24,8
+    EDITTEXT        IDC_LOCATION,42,48,45,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Location",IDC_STATIC,3,50,33,8
+    LTEXT           "Reference",IDC_STATIC,3,20,33,8
+END
+
+IDD_TEXT_EDIT DIALOG DISCARDABLE  0, 0, 129, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Title"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT,0,0,129,63,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "Contains HTML",IDC_HTML,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,65,66,10
+    DEFPUSHBUTTON   "OK",IDOK,88,64,39,12
+END
+
+IDD_TYPE_AND_CONTAINER DIALOG DISCARDABLE  0, 0, 133, 15
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Title"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_LIST,0,1,105,62,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,105,1,27,12
+END
+
+IDD_WAYPOINTS DIALOG DISCARDABLE  0, 0, 129, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Waypoints"
+FONT 8, "System"
+BEGIN
+    CONTROL         "List1",IDC_WPTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,15,129,54
+    PUSHBUTTON      "New",IDC_NEW,2,2,21,11
+    PUSHBUTTON      "Edit",IDC_EDIT,26,2,17,11
+    PUSHBUTTON      "Delete",IDC_DELETE,46,2,25,11
+    PUSHBUTTON      "Import",IDC_IMPORT,74,2,27,11
+    PUSHBUTTON      "Select",IDC_SELECT,104,2,24,11,WS_DISABLED
+END
+
+IDD_WPT_PROPERTIES DIALOG DISCARDABLE  0, 0, 133, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Waypoint Properties"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_NAME,36,3,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Coords",IDC_COORDS,4,19,30,10
+    EDITTEXT        IDC_COMMENT,36,42,93,27,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "Name",IDC_STATIC,15,4,19,8
+    EDITTEXT        IDC_COORDS_TEXT,36,18,93,21,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | NOT WS_TABSTOP
+    LTEXT           "Comment",IDC_STATIC,3,43,31,8
+END
+
+IDD_CACHE_FIELDNOTES DIALOG DISCARDABLE  0, 0, 120, 84
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Field Notes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_STATUS,1,3,69,63,CBS_DROPDOWNLIST | WS_TABSTOP
+    PUSHBUTTON      "Timestamp",IDC_TIMESTAMP,72,3,47,12
+    EDITTEXT        IDC_NOTES,0,18,120,48,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_GROUP
+    PUSHBUTTON      "TBs",IDC_TB,3,69,21,12
+    PUSHBUTTON      "Coords.",IDC_COORDS,28,69,29,12
+    PUSHBUTTON      "Delete",IDC_DELETE,59,69,29,12
+    PUSHBUTTON      "Voice",IDC_RECORD,90,69,29,12
+END
+
+IDD_EXPORT_LOCS_SELECTION DIALOG DISCARDABLE  0, 0, 99, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wpts & Notes Formats"
+FONT 8, "System"
+BEGIN
+    LISTBOX         IDC_EXPORT_TYPES,0,0,99,60,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Path",IDC_SET_LOC,4,75,23,12
+    PUSHBUTTON      "Options",IDC_EXPORT_OPTIONS,30,75,30,12
+    DEFPUSHBUTTON   "Export",IDC_EXPORT,63,75,33,12
+    EDITTEXT        IDC_LOCATION,0,60,99,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_FILTER_RATINGS DIALOG DISCARDABLE  0, 0, 133, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cache Ratings"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Difficulty",IDC_DIFFICULTY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,3,44,10
+    COMBOBOX        IDC_DIFF_OPER,8,15,96,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DIFF_LVL,105,15,27,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Terrain",IDC_TERRAIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,33,39,10
+    COMBOBOX        IDC_TERR_OPER,8,45,96,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_TERR_LVL,105,45,27,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PREFERENCES DIALOG DISCARDABLE  0, 0, 109, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "App Config"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Auto-Reload Last GPX File",IDC_RELOAD_LAST_GPX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,3,102,10
+    CONTROL         "Double-Click Cache Details",
+                    IDC_DOUBLECLICK_CACHE_DETAILS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,3,15,102,10
+    CONTROL         "Disable image downloads",IDC_NO_IMG_TAGS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,26,102,10
+    PUSHBUTTON      "...",IDC_SPOILER_BROWSE,87,52,15,12
+    EDITTEXT        IDC_SPOILER_PICS_LOCATION,6,52,78,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Spoiler Sync - Pics Location",IDC_STATIC,7,40,92,8
+END
+
+IDD_CACHECATEGORY DIALOG DISCARDABLE  0, 0, 119, 12
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cache Category"
+FONT 8, "System"
+BEGIN
+    COMBOBOX        IDC_CATEGORIES,0,0,96,105,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ok",ID_OK,96,0,23,12
+END
+
+IDD_CACHECATEGORYEDITOR DIALOG DISCARDABLE  0, 0, 90, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Categories"
+FONT 8, "System"
+BEGIN
+    EDITTEXT        IDC_CAT,3,1,84,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_ADD,3,14,36,12
+    PUSHBUTTON      "Remove",IDC_REMOVE,51,14,36,12
+    LISTBOX         IDC_CATLIST,3,27,84,57,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EXPORT_PREFS DIALOG DISCARDABLE  0, 0, 118, 33
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Options"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Name All Files After GPX File",IDC_EXPORT_NAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,3,105,10
+    EDITTEXT        IDC_ExportMaxLimit,48,15,21,12,ES_AUTOHSCROLL
+    LTEXT           "Only export",IDC_STATIC,3,18,42,8
+    LTEXT           "waypoints",IDC_STATIC,76,18,33,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,5,0,0
+ PRODUCTVERSION 1,5,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Designed to work with GPX files from www.geocaching.com. If you like this application, please make a donation @ http://gpxsonar.homeip.net\0"
+            VALUE "CompanyName", "-=(GEO)=-\0"
+            VALUE "FileDescription", "GpxSonar - Pocket PC Geocaching application\0"
+            VALUE "FileVersion", "1, 5, 0, 0\0"
+            VALUE "InternalName", "GpxSonar\0"
+            VALUE "LegalCopyright", "Copyright © 2003-2006 Fabien Royer\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GpxSonar.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "GpxSonar Application\0"
+            VALUE "ProductVersion", "1, 5, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_ALIAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 99
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 8
+    END
+
+    IDD_CACHE_HINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CACHE_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CACHE_LISTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_CACHE_TRAVEL_BUGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CENTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 99
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_DATE_PICKER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 66
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_DIST_UNITS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 66
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_FIELDNOTESREPORTPREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 99
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_FILTER_CONTAINERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 89
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_FILTER_DIST_BEARING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_FILTER_IGNORED_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_FILTER_MGR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 86
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_FILTER_STRINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_FILTER_TYPES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_GPX_FILE_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_LINE_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_LIST_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_MY_TRAVEL_BUGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_MYCACHE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_MYCACHES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_RATING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 66
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 8
+    END
+
+    IDD_ROT13CONVERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 99
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TB_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_TEXT_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_TYPE_AND_CONTAINER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 8
+    END
+
+    IDD_WAYPOINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_WPT_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_CACHE_FIELDNOTES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_EXPORT_LOCS_SELECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_FILTER_RATINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 102
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_CACHECATEGORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 5
+    END
+
+    IDD_CACHECATEGORYEDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 83
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_EXPORT_PREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 26
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CENTER DLGINIT
+BEGIN
+    IDC_LAT_COMBO, 0x403, 4, 0
+0x004e, 0x0000, 
+    IDC_LAT_COMBO, 0x403, 4, 0
+0x0053, 0x0000, 
+    IDC_LONG_COMBO, 0x403, 4, 0
+0x0057, 0x0000, 
+    IDC_LONG_COMBO, 0x403, 4, 0
+0x0045, 0x0000, 
+    0
+END
+
+IDD_DATE_PICKER DLGINIT
+BEGIN
+    IDC_YEAR, 0x403, 10, 0
+0x0032, 0x0030, 0x0030, 0x0031, 0x0000, 
+    IDC_YEAR, 0x403, 10, 0
+0x0032, 0x0030, 0x0030, 0x0032, 0x0000, 
+    IDC_YEAR, 0x403, 10, 0
+0x0032, 0x0030, 0x0030, 0x0033, 0x0000, 
+    IDC_YEAR, 0x403, 10, 0
+0x0032, 0x0030, 0x0030, 0x0034, 0x0000, 
+    IDC_YEAR, 0x403, 10, 0
+0x0032, 0x0030, 0x0030, 0x0035, 0x0000, 
+    IDC_YEAR, 0x403, 10, 0
+0x0032, 0x0030, 0x0030, 0x0036, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0031, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0032, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0033, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0034, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0035, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0036, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0037, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0038, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0030, 0x0039, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0031, 0x0030, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0031, 0x0031, 0x0000, 
+    IDC_MONTH, 0x403, 6, 0
+0x0031, 0x0032, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0031, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0032, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0033, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0034, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0035, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0036, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0037, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0038, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0030, 0x0039, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0030, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0031, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0032, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0033, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0034, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0035, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0036, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0037, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0038, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0031, 0x0039, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0030, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0031, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0032, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0033, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0034, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0035, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0036, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0037, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0038, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0032, 0x0039, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0033, 0x0030, 0x0000, 
+    IDC_DAY, 0x403, 6, 0
+0x0033, 0x0031, 0x0000, 
+    0
+END
+
+IDD_RATING DLGINIT
+BEGIN
+    IDC_RATING, 0x403, 8, 0
+0x0031, 0x002e, 0x0030, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0031, 0x002e, 0x0035, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0032, 0x002e, 0x0030, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0032, 0x002e, 0x0035, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0033, 0x002e, 0x0030, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0033, 0x002e, 0x0035, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0034, 0x002e, 0x0030, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0034, 0x002e, 0x0035, 0x0000, 
+    IDC_RATING, 0x403, 8, 0
+0x0035, 0x002e, 0x0030, 0x0000, 
+    0
+END
+
+IDD_CACHE_FIELDNOTES DLGINIT
+BEGIN
+    IDC_STATUS, 0x403, 18, 0
+0x0046, 0x006f, 0x0075, 0x006e, 0x0064, 0x0020, 0x0049, 0x0074, 0x0000, 
+
+    IDC_STATUS, 0x403, 32, 0
+0x0044, 0x0069, 0x0064, 0x0020, 0x004e, 0x006f, 0x0074, 0x0020, 0x0046, 
+0x0069, 0x006e, 0x0064, 0x0020, 0x0049, 0x0074, 0x0000, 
+    IDC_STATUS, 0x403, 26, 0
+0x0057, 0x0072, 0x0069, 0x0074, 0x0065, 0x0020, 0x0041, 0x0020, 0x004e, 
+0x006f, 0x0074, 0x0065, 0x0000, 
+    IDC_STATUS, 0x403, 22, 0
+0x0041, 0x0072, 0x0063, 0x0068, 0x0069, 0x0076, 0x0065, 0x0020, 0x0049, 
+0x0074, 0x0000, 
+    0
+END
+
+IDD_FILTER_RATINGS DLGINIT
+BEGIN
+    IDC_DIFF_OPER, 0x403, 50, 0
+0x0047, 0x0072, 0x0065, 0x0061, 0x0074, 0x0065, 0x0072, 0x0020, 0x0054, 
+0x0068, 0x0061, 0x006e, 0x0020, 0x004f, 0x0072, 0x0020, 0x0045, 0x0071, 
+0x0075, 0x0061, 0x006c, 0x0020, 0x0054, 0x006f, 0x0000, 
+    IDC_DIFF_OPER, 0x403, 18, 0
+0x0045, 0x0071, 0x0075, 0x0061, 0x006c, 0x0020, 0x0054, 0x006f, 0x0000, 
+
+    IDC_DIFF_OPER, 0x403, 44, 0
+0x004c, 0x0065, 0x0073, 0x0073, 0x0020, 0x0054, 0x0068, 0x0061, 0x006e, 
+0x0020, 0x004f, 0x0072, 0x0020, 0x0045, 0x0071, 0x0075, 0x0061, 0x006c, 
+0x0020, 0x0054, 0x006f, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0031, 0x002e, 0x0030, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0031, 0x002e, 0x0035, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0032, 0x002e, 0x0030, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0032, 0x002e, 0x0035, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0033, 0x002e, 0x0030, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0033, 0x002e, 0x0035, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0034, 0x002e, 0x0030, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0034, 0x002e, 0x0035, 0x0000, 
+    IDC_DIFF_LVL, 0x403, 8, 0
+0x0035, 0x002e, 0x0030, 0x0000, 
+    IDC_TERR_OPER, 0x403, 50, 0
+0x0047, 0x0072, 0x0065, 0x0061, 0x0074, 0x0065, 0x0072, 0x0020, 0x0054, 
+0x0068, 0x0061, 0x006e, 0x0020, 0x004f, 0x0072, 0x0020, 0x0045, 0x0071, 
+0x0075, 0x0061, 0x006c, 0x0020, 0x0054, 0x006f, 0x0000, 
+    IDC_TERR_OPER, 0x403, 18, 0
+0x0045, 0x0071, 0x0075, 0x0061, 0x006c, 0x0020, 0x0054, 0x006f, 0x0000, 
+
+    IDC_TERR_OPER, 0x403, 44, 0
+0x004c, 0x0065, 0x0073, 0x0073, 0x0020, 0x0054, 0x0068, 0x0061, 0x006e, 
+0x0020, 0x004f, 0x0072, 0x0020, 0x0045, 0x0071, 0x0075, 0x0061, 0x006c, 
+0x0020, 0x0054, 0x006f, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0031, 0x002e, 0x0030, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0031, 0x002e, 0x0035, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0032, 0x002e, 0x0030, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0032, 0x002e, 0x0035, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0033, 0x002e, 0x0030, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0033, 0x002e, 0x0035, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0034, 0x002e, 0x0030, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0034, 0x002e, 0x0035, 0x0000, 
+    IDC_TERR_LVL, 0x403, 8, 0
+0x0035, 0x002e, 0x0030, 0x0000, 
+    0
+END
+
+IDD_MYCACHES DLGINIT
+BEGIN
+    IDC_COMMAND, 0x403, 38, 0
+0x0043, 0x0072, 0x0065, 0x0061, 0x0074, 0x0065, 0x0020, 0x0061, 0x0020, 
+0x006e, 0x0065, 0x0077, 0x0020, 0x0063, 0x0061, 0x0063, 0x0068, 0x0065, 
+0x0000, 
+    IDC_COMMAND, 0x403, 36, 0
+0x0044, 0x0065, 0x006c, 0x0065, 0x0074, 0x0065, 0x0020, 0x0074, 0x0068, 
+0x0069, 0x0073, 0x0020, 0x0063, 0x0061, 0x0063, 0x0068, 0x0065, 0x0000, 
+
+    IDC_COMMAND, 0x403, 32, 0
+0x0045, 0x0064, 0x0069, 0x0074, 0x0020, 0x0074, 0x0068, 0x0069, 0x0073, 
+0x0020, 0x0063, 0x0061, 0x0063, 0x0068, 0x0065, 0x0000, 
+    IDC_COMMAND, 0x403, 34, 0
+0x0045, 0x0078, 0x0070, 0x006f, 0x0072, 0x0074, 0x0020, 0x0077, 0x0061, 
+0x0079, 0x0070, 0x006f, 0x0069, 0x006e, 0x0074, 0x0073, 0x0000, 
+    IDC_COMMAND, 0x403, 56, 0
+0x0049, 0x006d, 0x0070, 0x006f, 0x0072, 0x0074, 0x0020, 0x0063, 0x0061, 
+0x0063, 0x0068, 0x0065, 0x0020, 0x0066, 0x0072, 0x006f, 0x006d, 0x0020, 
+0x006d, 0x0061, 0x0069, 0x006e, 0x0020, 0x006c, 0x0069, 0x0073, 0x0074, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\GeoSonar.ico"
+IDI_PLAY                ICON    DISCARDABLE     "res\\play.ico"
+IDI_RECORD              ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILTERS
+    BUTTON      ID_QUICK_SEARCH
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "GpxSonar\n\nGpxSonar\n\n\nGpxSonar.Document\nGpxSonar Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NEW                 "New"
+    IDS_FILE                "File"
+    IDS_MHELP               "Help"
+    IDS_SAVE                "Save"
+    IDS_CUT                 "Cut"
+    IDS_COPY                "Copy"
+    IDS_PASTE               "Paste"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EDIT                "Edit"
+    IDS_TOOL                "Tools"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_CAPS       "CAP"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CAP_LIST            "List"
+    ID_MENU_CACHEOPTIONS_IGNORECACHE "File"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILTERS              "Active Filters"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\GpxSonar.rc2"  // non-Microsoft eMbedded Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "wceres.rc"         // WCE-specific components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
